@@ -15,6 +15,8 @@ public class Hero1Movement : MonoBehaviour
     //Îáúÿâëÿş àíèìàòîğ
     public Animator Anim;
 
+    [SerializeField] private AudioClip _run;
+
     Vector2 movement;
 
     //private float run;
@@ -116,6 +118,9 @@ public class Hero1Movement : MonoBehaviour
         {
             StartCoroutine(MoveBob(input));
             GameControlScript2.steps -= 1;
+            //ÇÂÓÊ ÕÎÄÜÁÀ ÍÅÂÑÊÎÃÎ
+            SoundManager.instance.PlaySound(_run);
+
             //run= 1;
             Anim.SetFloat("Horizontal", input.x);
             Anim.SetFloat("Vertical", input.y);
