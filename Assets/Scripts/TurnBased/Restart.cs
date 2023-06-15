@@ -17,6 +17,8 @@ public class Restart : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Escape))
         {
+            print("BACK TO MENUUUU!!!");
+            Destroy(MusicNonstop.instance.gameObject);
             SceneManager.LoadScene("Menu");
         }
     }

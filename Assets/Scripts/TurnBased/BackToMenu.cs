@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class BackToMenu : MonoBehaviour
 {
 
-    private void Start()
+    /*private void Start()
     {
         GameObject[] musicObj = GameObject.FindGameObjectsWithTag("GameMusic");
         if (musicObj.Length > 1)
         {
             Destroy(this.gameObject);
         }
-    }
+    }*/
     public void LoadMainMenu()
     {
         print("BACK TO MENUUUU!!!");
