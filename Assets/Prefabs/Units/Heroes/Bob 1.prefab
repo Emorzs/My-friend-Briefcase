@@ -104,6 +104,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Anim: {fileID: 1803322692}
+  _running: {fileID: 8300000, guid: aec9bd0c661862a49bdf9719565e75fb, type: 3}
 --- !u!50 &1486613996328161032
 Rigidbody2D:
   serializedVersion: 4

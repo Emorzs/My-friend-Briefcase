@@ -215,6 +215,8 @@ MonoBehaviour:
   NotActivateWall: {fileID: 0}
   Note: {fileID: 0}
   Anim: {fileID: 8951000665309205371}
+  _takedpaper: {fileID: 8300000, guid: fe23266528ba0c1489862d468d908d18, type: 3}
+  _closenote: {fileID: 8300000, guid: c4a22abfde8a35b489115da9ecc91c94, type: 3}
 --- !u!95 &8951000665309205371
 Animator:
   serializedVersion: 4

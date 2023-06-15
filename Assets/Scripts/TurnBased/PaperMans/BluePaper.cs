@@ -10,6 +10,9 @@ public class BluePaper : MonoBehaviour
     public GameObject Note;
     public Animator Anim;
 
+    //Звук подбора бумажки
+    [SerializeField] private AudioClip _takedpaper, _closenote;
+
     private void Start()
     {
         List.gameObject.SetActive(false);
@@ -20,6 +23,8 @@ public class BluePaper : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        //Звук TakedPaper
+        SoundManager.instance.PlaySound(_takedpaper);
         List.gameObject.SetActive(true);
         GameControlScript2.blue += 1;
         //print(GameControlScript2.blue);
@@ -49,6 +54,8 @@ public class BluePaper : MonoBehaviour
 
     public void ExitButton()
     {
+        //Звук CloseNote
+        SoundManager.instance.PlaySound(_closenote);
         Destroy(Note);
         Time.timeScale = 1;
         Anim.SetTrigger("PickUp");
