@@ -149,6 +149,7 @@ MonoBehaviour:
   List: {fileID: 0}
   ClearTrash: {fileID: 0}
   FilledTrashCan: {fileID: 0}
+  _binsound: {fileID: 8300000, guid: cd678f039febc9649a285618f7ca789f, type: 3}
 --- !u!1 &8727923355205190611
 GameObject:
   m_ObjectHideFlags: 0

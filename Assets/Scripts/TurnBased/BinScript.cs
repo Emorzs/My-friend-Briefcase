@@ -8,6 +8,9 @@ public class BinScript : MonoBehaviour
     public GameObject ClearTrash;
     public GameObject FilledTrashCan;
 
+    //Звук мусорного ведра
+    [SerializeField] private AudioClip _binsound;
+
     private void Start()
     {
         List.SetActive(false);
@@ -22,6 +25,8 @@ public class BinScript : MonoBehaviour
         {
             //GameControlScript2.red += 1;
             GameControlScript2.red -= 1;
+            //Звук BinSound2
+            SoundManager.instance.PlaySound(_binsound);
             ClearTrash.SetActive(false);
             List.SetActive(true);
             FilledTrashCan.SetActive(true);
